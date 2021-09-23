@@ -114,21 +114,21 @@ class HeadPose:
 
 #----------------separate test-------------------
 
-cap= cv2.VideoCapture(0)
+# cap= cv2.VideoCapture(0)
 
-while True:
-    ret, frame= cap.read()
+# while True:
+#     ret, frame= cap.read()
 
-    label = HeadPose.headpose(frame)
+#     label = HeadPose.headpose(frame)
 
-    cv2.putText(frame, "Headpose:" + str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
+#     cv2.putText(frame, "Headpose:" + str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
 
-    cv2.imshow("Frame", frame)
+#     cv2.imshow("Frame", frame)
 
-    key=cv2.waitKey(1)
+#     key=cv2.waitKey(1)
 
-    if cv2.waitKey(1) & 0xFF == ord("q"):
-        break
+#     if cv2.waitKey(1) & 0xFF == ord("q"):
+#         break
 
-cap.release()
-cv2.destroyAllWindows()
+# cap.release()
+# cv2.destroyAllWindows()
