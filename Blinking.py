@@ -70,19 +70,19 @@ class Blink:
 
 # #---------------separate test-------------------
 
-cap= cv2.VideoCapture(0)
-while True:
-    ret, frame= cap.read()
+# cap= cv2.VideoCapture(0)
+# while True:
+#     ret, frame= cap.read()
 
-    counter = Blink.blink(frame)
+#     counter = Blink.blink(frame)
 
-    cv2.putText(frame, "Blinks:" + str(counter), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
+#     cv2.putText(frame, "Blinks:" + str(counter), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
 
-    cv2.imshow("Frame", frame)
+#     cv2.imshow("Frame", frame)
 
-    key=cv2.waitKey(1)
+#     key=cv2.waitKey(1)
 
-    if key==27:
-        break
-cap.release()
-cv2.destroyAllWindows()
+#     if key==27:
+#         break
+# cap.release()
+# cv2.destroyAllWindows()
