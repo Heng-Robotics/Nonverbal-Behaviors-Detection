@@ -102,19 +102,19 @@ class Gaze:
 
 # # ------------separate test-------------------
 
-cap= cv2.VideoCapture(0)
-while True:
-    ret, frame= cap.read()
+# cap= cv2.VideoCapture(0)
+# while True:
+#     ret, frame= cap.read()
 
-    gaze_status, new_frame = Gaze.gaze_aversion(frame)
+#     gaze_status, new_frame = Gaze.gaze_aversion(frame)
 
-    cv2.putText(frame, gaze_status, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+#     cv2.putText(frame, gaze_status, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
 
-    cv2.imshow("Frame", frame)
-    cv2.imshow("New Frame", new_frame)
-    key=cv2.waitKey(1)
+#     cv2.imshow("Frame", frame)
+#     cv2.imshow("New Frame", new_frame)
+#     key=cv2.waitKey(1)
 
-    if key==27:
-        break
-cap.release()
-cv2.destroyAllWindows()
+#     if key==27:
+#         break
+# cap.release()
+# cv2.destroyAllWindows()
