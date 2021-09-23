@@ -34,22 +34,22 @@ class Smile:
 
 #----------------seperate test-------------------
 
-cap = cv2.VideoCapture(0)
+# cap = cv2.VideoCapture(0)
 
-while True:
+# while True:
 
-    ret, frame = cap.read()
+#     ret, frame = cap.read()
 
-    label = Smile.smile(frame)
+#     label = Smile.smile(frame)
 
-    cv2.putText(frame, 'smiling:' + str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
+#     cv2.putText(frame, 'smiling:' + str(label), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0,0,255), 2)
     
-    cv2.imshow('Smile detector', frame)
+#     cv2.imshow('Smile detector', frame)
 
-    # cv2.waitKey(1)
+#     # cv2.waitKey(1)
 
-    if cv2.waitKey(1) & 0xFF == ord("q"):
-        break
+#     if cv2.waitKey(1) & 0xFF == ord("q"):
+#         break
 
-cap.release()
-cv2.destroyAllWindows()
+# cap.release()
+# cv2.destroyAllWindows()
