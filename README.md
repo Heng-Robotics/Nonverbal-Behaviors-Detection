@@ -16,3 +16,4 @@ python main.py
 At the end of each piece of code above(except main.py),uncomment the code after #-------separate test------, you can run each piece of code solely.
 
 * remenber to download shape_predictor_68_face_landmarks.dat from the link: https://drive.google.com/file/d/1r1PWlUfrAChbAW7K6VdVtDsZYAR8VEN3/view?usp=sharing
+* After download, put the shape_predictor_68_face_landmarks.dat in the source folder.
